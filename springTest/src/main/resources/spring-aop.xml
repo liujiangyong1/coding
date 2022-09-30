@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org/schema/aop
+	   http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean class="advice.AdviceTarget" id="adviceTarget"/>
+    <bean class="advice.BeforeService" id="beforeService"/>
+    <bean class="advice.AfterReturnService" id="afterReturnService"/>
+    <bean class="advice.ExceptionService" id="exceptionService"/>
+    <bean class="advice.AroundService" id="aroundService"/>
+    <bean class="advice.AfterService" id="afterService"/>
+    <bean class="advice.AdviceTest" id="adviceTest"/>
+
+    <aop:config>
+<!--        <aop:pointcut id="point" expression="execution(* advice.AdviceTarget.testAdvice(..))"/>-->
+        <aop:pointcut id="point" expression="execution(* advice.AdviceTarget.*(..))"/>
+<!--        <aop:advisor advice-ref="beforeService" pointcut-ref="point"/>-->
+<!--        <aop:advisor advice-ref="afterReturnService" pointcut-ref="point"/>-->
+<!--        <aop:advisor advice-ref="exceptionService" pointcut-ref="point"/>-->
+<!--        <aop:advisor advice-ref="aroundService" pointcut-ref="point"/>-->
+<!--        <aop:advisor advice-ref="afterService" pointcut-ref="point"/>-->
+        <aop:aspect ref="adviceTest">
+            <aop:before method="test" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>

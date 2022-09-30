@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--bean的注入方式还有很多种， ①set注入， ②构造器注入， ③工厂注入， ④p命名空间注入， ⑤@bean注解注入-->
+    <!-- bean的注入方式   -->
+    <bean id="cat" class="entity.Cat">
+        <property name="name" value="小花猫"/>
+        <property name="age" value="2"/>
+    </bean>
+
+    <!-- bean的注入方式   -->
+    <bean id="cat1" class="entity.Cat" p:name="大花猫" p:age="1"/>
+
+
+
+</beans>

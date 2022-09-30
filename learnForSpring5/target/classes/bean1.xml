@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dep1" class="com.guigu.bean.Dep">
+        <property name="name" value="嵌入式部门"></property>
+    </bean>
+    <bean id="emp1" class="com.guigu.bean.Emp">
+        <property name="name" value="ljy"/>
+        <property name="gender" value="男"/>
+        <property name="dep" ref="dep1"/>
+    </bean>
+
+
+
+    <!--第一种  级联赋值-->
+    <bean id="dep4" class="com.guigu.bean.Dep">
+        <property name="name" value="安保部门"></property>
+    </bean>
+    <bean id="emp4" class="com.guigu.bean.Emp">
+        <property name="name" value="ljy"/>
+        <property name="gender" value="男"/>
+        <property name="dep" ref="dep4"/>
+    </bean>
+
+    <!--第二种  级联赋值-->
+    <bean id="emp5" class="com.guigu.bean.Emp">
+        <property name="name" value="ljy"/>
+        <property name="gender" value="男"/>
+        <property name="dep" ref="dep"/>
+        <property name="dep.name" value="技术部门"/>
+    </bean>
+    <bean id="dep" class="com.guigu.bean.Dep">
+<!--        <property name="name" value="财务部"/>-->
+    </bean>
+
+</beans>
