@@ -14,7 +14,8 @@ import org.springframework.transaction.annotation.Transactional;
  * @Description:
  */
 @Service
-@Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, readOnly = false)
+//@Transactional(isolation = Isolation.REPEATABLE_READ, propagation = Propagation.REQUIRED, readOnly = false)
+@Transactional
 public class UserService {
 
 

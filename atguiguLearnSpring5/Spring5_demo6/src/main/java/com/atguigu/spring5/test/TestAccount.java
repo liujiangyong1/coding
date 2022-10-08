@@ -1,6 +1,6 @@
 package com.atguigu.spring5.test;
 
-import com.atguigu.spring5.config.TestConfig;
+//import com.atguigu.spring5.config.TestConfig;
 import com.atguigu.spring5.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -28,11 +28,11 @@ public class TestAccount {
         userService.accountMoney();
     }
 
-    @Test
-    public void test3(){
-        ApplicationContext context = new AnnotationConfigApplicationContext(TestConfig.class);
-        UserService userService = context.getBean("userService", UserService.class);
-        userService.accountMoney();
-    }
+//    @Test
+//    public void test3(){
+//        ApplicationContext context = new AnnotationConfigApplicationContext(TestConfig.class);
+//        UserService userService = context.getBean("userService", UserService.class);
+//        userService.accountMoney();
+//    }
 
 }

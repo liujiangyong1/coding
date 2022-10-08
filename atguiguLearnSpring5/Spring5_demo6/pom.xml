@@ -72,6 +72,19 @@
             <version>1.2.17</version>
         </dependency>
 
+        <!--  在pom.xml文件中导入 spring 整合 Junit 的坐标-spring-test。      -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <!--    注意版本要与spring-context版本一致，不一致会报错     -->
+            <version>5.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+        </dependency>
+
 
     </dependencies>
 
