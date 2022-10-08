@@ -9,6 +9,7 @@
         <module name="learningForSpring5_demo5" />
         <module name="springTest" />
         <module name="learnForSpring5_demo4" />
+        <module name="demoreactor" />
         <module name="learnForSpring5" />
         <module name="Spring5_demo5" />
         <module name="serverAndClient" />
@@ -17,6 +18,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="atguiguLearnSpring5" target="1.5" />
+      <module name="demoreactor" target="1.8" />
       <module name="learnForSpring5" target="1.5" />
       <module name="learnForSpring5_demo4" target="1.8" />
       <module name="learningForSpring5" target="1.5" />
@@ -27,5 +29,10 @@
       <module name="spring5Learning" target="1.5" />
       <module name="springTest" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demoreactor" options="-parameters" />
+    </option>
   </component>
 </project>
