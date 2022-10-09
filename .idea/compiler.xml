@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="coding" />
         <module name="learningForSpring5_demo5" />
         <module name="springTest" />
         <module name="learnForSpring5_demo4" />
@@ -13,26 +14,31 @@
         <module name="learnForSpring5" />
         <module name="Spring5_demo5" />
         <module name="serverAndClient" />
+        <module name="webfluxdemo3" />
         <module name="Spring5_demo6" />
+        <module name="webfluxdemo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="atguiguLearnSpring5" target="1.5" />
+      <module name="coding" target="1.5" />
       <module name="demoreactor" target="1.8" />
       <module name="learnForSpring5" target="1.5" />
       <module name="learnForSpring5_demo4" target="1.8" />
-      <module name="learningForSpring5" target="1.5" />
-      <module name="learningForSpring5_demo5" target="1.5" />
       <module name="serverAndClient" target="1.5" />
       <module name="Spring5_demo5" target="1.8" />
       <module name="Spring5_demo6" target="1.8" />
-      <module name="spring5Learning" target="1.5" />
       <module name="springTest" target="1.5" />
+      <module name="webfluxdemo1" target="1.8" />
+      <module name="webfluxdemo2" target="1.5" />
+      <module name="webfluxdemo3" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demoreactor" options="-parameters" />
+      <module name="webfluxdemo1" options="-parameters" />
+      <module name="webfluxdemo3" options="" />
     </option>
   </component>
 </project>
