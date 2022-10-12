@@ -62,7 +62,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.7.RELEASE</version>
+                <version>2.2.1.RELEASE</version>
                 <configuration>
                     <mainClass>com.atguigu.webfluxdemo3.Webfluxdemo3Application</mainClass>
                 </configuration>
