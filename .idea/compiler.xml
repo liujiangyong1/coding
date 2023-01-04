@@ -6,17 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learningForSpring5_demo5" />
-        <module name="springTest" />
         <module name="learnForSpring5_demo4" />
         <module name="demoreactor" />
+        <module name="SpringMVC-demo2" />
         <module name="SpringMVC-demo1" />
+        <module name="webfluxdemo3" />
+        <module name="webfluxdemo1" />
+        <module name="learningForSpring5_demo5" />
+        <module name="springTest" />
         <module name="learnForSpring5" />
         <module name="Spring5_demo5" />
+        <module name="SpringMVC-demo3" />
         <module name="serverAndClient" />
-        <module name="webfluxdemo3" />
         <module name="Spring5_demo6" />
-        <module name="webfluxdemo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -31,6 +33,8 @@
       <module name="SpringMVC" target="1.5" />
       <module name="SpringMVC-demo1" target="1.5" />
       <module name="springMVC-demo1" target="1.5" />
+      <module name="SpringMVC-demo2" target="1.5" />
+      <module name="SpringMVC-demo3" target="1.5" />
       <module name="springTest" target="1.5" />
       <module name="webfluxdemo1" target="1.8" />
       <module name="webfluxdemo2" target="1.5" />

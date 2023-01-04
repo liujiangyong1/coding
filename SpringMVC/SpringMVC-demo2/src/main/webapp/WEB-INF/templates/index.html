@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<a th:href="@{/hello}">访问目标界面</a><br>
+<a th:href="@{/testParamsAndHeaders(username='admin',password=123456)}">测试Params参数的链接</a><br>
+<a th:href="@{/testForward}">测试forward  转发</a><br>
+<a th:href="@{/testRedirect}">测试redirect  重定向</a><br>
+
+</body>
+</html>
